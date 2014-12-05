@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="background_type" mtime="1400746190" type="string">
+		<stringvalue>transparent</stringvalue>
+	</entry>
+	<entry name="background_darkness" mtime="1400746190" type="string">
+		<stringvalue>0.85611499999999996</stringvalue>
+	</entry>
+	<entry name="scrollback_unlimited" mtime="1400746189" type="bool" value="true"/>
+</gconf>

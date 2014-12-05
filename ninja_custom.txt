@@ -1,0 +1,104 @@
+# install new version kernel
+ change auto/config
+	--linux-packages linux-image-3.14.4 \
+ change config/hooks/0090linux-ext.chroot
+	 #install custom kernel
+	 43 apt-get -y purge linux-image-amd64 linux-image-3.14-kali1-amd64
+	 44 update-initramfs -k  3.14.4-amd64 -c
+	 45 rm -f /initrd.img
+	 46 rm -f /vmlinuz
+	 47 ln -s /boot/initrd.img-3.14.4-amd64 /initrd.img
+	 48 ln -s /boot/vmlinuz-3.14.4-amd64 /vmlinuz
+--------------------------------------------------------------------------------------
+vim /etc/apt/sources.list
+
+deb http://repo.kali.org/kali kali main non-free contrib
+deb http://security.kali.org/kali-security kali/updates main contrib non-free
+deb http://repo.kali.org/kali kali-bleeding-edge main
+
+deb-src http://repo.kali.org/kali kali main non-free contrib
+deb-src http://security.kali.org/kali-security kali/updates main contrib non-free
+----------------------------------------------------------------------------------------
+echo "deb http://repo.mate-desktop.org/debian wheezy main" >> /etc/apt/sources.list
+apt-get update
+apt-get install mate-archive-keyring
+
+# apt-get install git live-build cdebootstrap
+# git clone git://git.kali.org/live-build-config.git
+cd live-build-config
+mkdir config/archives
+echo "deb http://repo.mate-desktop.org/debian wheezy main" > config/archives/mate.list.binary
+echo "deb http://repo.mate-desktop.org/debian wheezy main" > config/archives/mate.list.chroot
+cp /usr/share/keyrings/mate-archive-keyring.gpg  config/archives/mate.key.binary
+cp /usr/share/keyrings/mate-archive-keyring.gpg  config/archives/mate.key.chroot
+echo "sleep 20" >> config/hooks/z_sleep.chroot
+
+# add mate desktop to the packages list:
+nano config/package-lists/kali.list.chroot
+
+# after editing, it should look like this:
+xorg
+mate-archive-keyring
+mate-core
+mate-desktop-environment
+mate-desktop-environment-extra
+synaptic
+gdm3
+network-manager
+network-manager-gnome
+network-manager-openvpn
+network-manager-vpnc
+network-manager-pptp
+ttf-ubuntu-title
+wmis
+arachni  
+owasp-mantra-ff
+ridenum
+jd-gui
+oclgausscrack
+inguma
+freerdp-x11
+----------------------------------------------------------------------------------------
+leafpad /etc/xdg/menus/mate-applications.menu
+
+.....
+ <!-- Internet -->
+  <Menu>
+    <Name>Internet</Name>
+    <Directory>mate-network.directory</Directory>
+    <Include>
+      <And>
+        <Category>Network</Category>
+      </And>
+    </Include>
+  </Menu>   <!-- End Internet -->
+
+  <!-- Kali Linux  -->	
+  <MergeFile type="path">applications-merged/kali-applications.menu</MergeFile>
+
+.....
+----------------------------------------------------------------------------------------
+Speeding up future builds
+
+apt-get -y install apt-cacher-ng
+/etc/init.d/apt-cacher-ng start
+export http_proxy=http://localhost:3142/
+.... # setup and configure your live build
+lb build
+----------------------------------------------------------------------------------------
+ 1.安装kali
+
+apt-get -y install git live-build cdebootstrap kali-archive-keyring
+cd /tmp
+git clone git://git.kali.org/live-build-config.git
+apt-get -y remove libdebian-installer4
+apt-get -y install libdebian-installer4
+
+
+2.构建LIVE
+
+lb clean --purge
+dpkg --add-architecture amd64
+lb config --architecture amd64 --mirror-binary http://repo.kali.org/kali --mirror-binary-security http://security.kali.org/kali-security --apt-options "--force-yes --yes"
+lb build
+

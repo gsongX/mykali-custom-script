@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+
+gem install what_methods
+gem install awesome_print
+gem install interactive_editor
+gem install wirble
+
+#fix owtf
+pip install tornado --upgrade

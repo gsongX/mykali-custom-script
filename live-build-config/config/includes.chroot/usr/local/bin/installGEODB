@@ -1,0 +1,85 @@
+#!/bin/bash
+#下载免费数据库
+
+#GeoLite Country
+wget http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat.gz
+#GetLite Country IPv6
+#wget http://geolite.maxmind.com/download/geoip/database/GeoIPv6.dat.gz
+#GeoLite City
+wget http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz
+#GeoLite City IPv6(Beta)
+#wget http://geolite.maxmind.com/download/geoip/database/GeoLiteCityv6-beta/GeoLiteCityv6.dat.gz
+#GeoLite ASN
+wget http://download.maxmind.com/download/geoip/database/asnum/GeoIPASNum.dat.gz
+#GeoLite ASN IPv6
+#wget http://download.maxmind.com/download/geoip/database/asnum/GeoIPASNumv6.dat.gz
+
+
+#解压缩
+
+#gunzip
+gunzip GeoIP.dat.gz
+gunzip GeoLiteCity.dat.gz
+gunzip GeoIPASNum.dat.gz
+
+#get the md5 of binary file
+#generate md5 value of the dat
+
+
+#根据数据库文件的md5值来判断是否存在更新
+if [ ! -f GeoIP_md5 ]
+then
+md5sum -b GeoIP.dat > GeoIP_md5
+cp -f GeoIP.dat /usr/share/GeoIP/
+else
+GeoIP_result=$(md5sum -c GeoIP_md5)
+fi
+
+if [ ! -f GeoLiteCity_md5 ]
+then
+md5sum -b GeoLiteCity.dat > GeoLiteCity_md5
+cp -f GeoLiteCity.dat /usr/share/GeoIP/
+else
+GeoLiteCity_result=$(md5sum -c GeoLiteCity_md5)
+fi
+
+
+if [ ! -f GeoIPASNum_md5 ]
+then
+md5sum -b GeoIPASNum.dat > GeoIPASNum_md5
+cp -f GeoIPASNum.dat /usr/share/GeoIP/
+else
+GeoIPASNum_result=$(md5sum -c GeoIPASNum_md5)
+fi
+
+
+if [[ $GeoIP_result =~ OK$ ]]
+then
+echo "GeoIP.dat not updating"
+rm -f GeoIP.dat
+else
+echo "GeoIP.dat updating"
+md5sum -b GeoIP.dat > GeoIP_md5
+mv -f GeoIP.dat /usr/share/GeoIP/
+fi
+
+
+if [[ $GeoLiteCity_result =~ OK$ ]]
+then
+echo "GeoLiteCity.dat not updating"
+rm -f GeoLiteCity.dat
+else
+echo "GeoLiteCity.dat updating"
+md5sum -b GeoLiteCity.dat > GeoLiteCity_md5
+mv -f GeoLiteCity.dat /usr/share/GeoIP/
+fi
+
+if [[ $GeoIPASNum_result =~ OK$ ]]
+then
+echo "GeoIPASNum.dat not updating"
+rm -f GeoIPASNum.dat
+else
+echo "GeoIPASNum.dat updating"
+md5sum -b GeoIPASNum.dat > GeoIPASNum_md5
+mv -f GeoIPASNum.dat /usr/share/GeoIP/
+fi

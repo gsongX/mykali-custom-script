@@ -1,0 +1,172 @@
+#! /bin/bash
+# For aptitude
+
+####################################################################################
+
+#remove banner
+rm -f /etc/debian_version
+echo "NinjaSec Linux 1.0" > /etc/debian_version
+
+sed -i "s/Kali/NinjaSec/g" /etc/issue.net
+sed -i "s/Kali/NinjaSec/g" /etc/issue
+sed -i "s/1.0.6/1.0/g" /etc/issue
+sed -i "s/1.0.6/1.0/g" /etc/issue.net
+
+sed -i "s/Kali/NinjaSec/g" /etc/os-release
+sed -i "s/kali/ninjasec/g" /etc/os-release
+sed -i "s/kali.org/ninjasec.org/g" /etc/os-release
+sed -i "s/Kali/NinjaSec/g" /usr/share/desktop-directories/Kali.directory
+
+
+rm -f /usr/share/images/desktop-base/kali*
+rm -f /usr/share/images/desktop-base/login-background.png
+#rm -f /usr/share/images/desktop-base/default*
+#rm -f /usr/share/images/desktop-base/desktop*
+rm -f /etc/alternatives/desktop-background
+rm -f /etc/alternatives/desktop-background.xml
+#rm -f /etc/alternatives/desktop-splash
+rm -f /etc/alternatives/desktop-grub
+rm -f /usr/share/images/desktop-base/desktop-grub.png  
+#/etc/alternatives/desktop-background -> /usr/share/images/desktop-base/kali-wallpaper_1920x1080.png
+#/etc/alternatives/desktop-background.xml -> /usr/share/images/desktop-base/kali.xml
+#/etc/alternatives/desktop-grub -> /usr/share/images/desktop-base/kali-grub.png
+#/etc/alternatives/desktop-splash -> /usr/share/images/desktop-base/spacefun-splash.svg
+ln -s /usr/share/images/desktop-base/ninja-wallpaper-1920x1080.png /etc/alternatives/desktop-background
+ln -s /usr/share/images/desktop-base/ninja.xml /etc/alternatives/desktop-background.xml
+ln -s /usr/share/images/desktop-base/ninja-desktop-grub.png  //usr/share/images/desktop-base/desktop-grub.png 
+rm -rf /usr/share/kde4/apps/ksplash/Themes/kali
+rm -rf /usr/share/wallpapers/kali
+rm -rf /usr/share/kde4/apps/kdm/themes/kali
+rm -rf /usr/share/plymouth/themes/kali
+
+#install custom kernel
+apt-get -y purge linux-image-amd64 linux-image-3.14-kali1-amd64
+update-initramfs -k  3.12.15-amd64 -c
+rm -f /initrd.img
+rm -f /vmlinuz
+ln -s /boot/initrd.img-3.12.15-amd64 /initrd.img
+ln -s /boot/vmlinuz-3.12.15-amd64 /vmlinuz
+
+
+rm -f /etc/alternatives/java
+ln -s /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java /etc/alternatives/java
+dpkg -i /var/cache/apt/archives/NinjaCommunity-1.0.2.deb
+rm -f /NinjaCommunity-1.0.2.deb
+cp /usr/share/applications/NinjaCommunity.desktop /etc/xdg/autostart/
+
+####################################################################################
+
+# disable kernel module
+#echo "blacklist floppy" > /etc/modprobe.d/blacklist-custom.conf
+#echo "blacklist pcscd" >> /etc/modprobe.d/blacklist-custom.conf
+
+#update-initramfs -k  3.12.15-amd64 -c
+#update-grub
+###################################################################################
+chmod +x /usr/local/bin/geoiplookup.py
+chmod +x /usr/local/bin/geoiplookup.pl
+chmod +x /usr/local/bin/installGEODB
+cd /usr/local/bin
+/usr/local/bin/installGEODB
+pip install maxminddb
+
+# fix os
+	rm -f /0
+	chmod +x /etc/init.d/sdmem
+	chmod +x /etc/init.d/skeleton
+
+# Create the tor folder with the correct permissions
+mkdir -p /var/run/tor
+chmod 700 /var/run/tor
+
+
+#install syslog-ng and remove rsyslog
+apt-get -y install syslog-ng && dpkg --purge rsyslog
+
+sed -i 's/access_log\ \/var\/log\/nginx\/access.log/access_log off/g' /etc/nginx/nginx.conf
+
+#fix msf path
+ln -s /usr/share/metasploit-framework /opt/metasploit/msf3
+
+#remove log text
+rm -f /etc/motd
+touch /etc/motd
+
+# fix apache 
+echo "ServerName localhost" >> /etc/apache2/apache2.conf
+
+# optimaztion os 
+sed -i "s/4:23:respawn/#4:23:respawn/g" /etc/inittab
+sed -i "s/5:23:respawn/#5:23:respawn/g" /etc/inittab
+sed -i "s/6:23:respawn/#6:23:respawn/g" /etc/inittab
+
+
+# remove unneed package 
+	apt-get -y purge nautilus modemmanager virtualbox  owasp-mantra-ff oclhashcat virtualbox-dkms virtualbox-qt tmux vim-gtk xpdf keepnote galculator lxmusic lxterminal xarchiver texlive-latex-extra-doc qt4-doc texlive-pstricks-doc texlive-fonts-extra-doc texlive-pictures-doc texlive-latex-base-doc texlive-latex-recommended-doc qt4-demos texlive-science-doc libx11-doc texlive-fonts-recommended-doc qtcreator-doc docutils-doc libssl-doc python-pyexiv2-doc live-config-doc live-boot-doc texlive-fonts-extra fonts-linuxlibertine otf-freefont fonts-freefont-otf fonts-junicode fonts-sil-gentium fonts-stix fonts-gfs-didot fonts-gfs-artemisia fonts-comfortaa fonts-gfs-neohellenic fonts-oflb-asana-math fonts-gfs-complutum fonts-gfs-olga fonts-gfs-solomos xscreensaver xscreensaver-data yelp gnome-user-guide leafpad zim mate-screensaver mate-themes valgrind-dbg
+	apt-get -y autoremove
+
+# fix security os
+sed -i 's/allow_url_fopen\ =\ On/allow_url_fopen\ =\ Off/g' /etc/php5/apache2/php.ini 
+sed -i 's/allow_url_fopen\ =\ On/allow_url_fopen\ =\ Off/g' /etc/php5/cli/php.ini
+sed -i 's/expose_php\ =\ On/expose_php\ =\ Off/g' /etc/php5/apache2/php.ini 
+sed -i 's/expose_php\ =\ On/expose_php\ =\ Off/g' /etc/php5/cli/php.ini
+
+sed -i 's/#net.ipv4.conf.default.rp_filter=1/net.ipv4.conf.default.rp_filter=1/g' /etc/sysctl.conf
+sed -i 's/#net.ipv4.conf.all.accept_redirects\ =\ 0/net.ipv4.conf.all.accept_redirects\ =\ 0/g' /etc/sysctl.conf
+sed -i 's/#net.ipv4.conf.all.log_martians\ =\ 1/net.ipv4.conf.all.log_martians\ =\ 1/g' /etc/sysctl.conf
+sed -i 's/#net.ipv4.conf.all.rp_filter=1/net.ipv4.conf.all.rp_filter=1/g' /etc/sysctl.conf
+sed -i 's/#net.ipv4.conf.all.send_redirects\ =\ 0/net.ipv4.conf.all.send_redirects\ =\ 0/g' /etc/sysctl.conf
+
+echo "kernel.core_uses_pid=1" >> /etc/sysctl.conf
+#echo "kernel.sysrq=0" >> /etc/sysctl.conf
+
+sed -i 's/#net.ipv6.conf.all.accept_redirects\ =\ 0/net.ipv6.conf.all.accept_redirects\ =\ 0/g' /etc/sysctl.conf
+echo "net.ipv4.conf.default.accept_source_route=0" >> /etc/sysctl.conf
+echo "net.ipv4.conf.default.accept_redirects=0" >> /etc/sysctl.conf
+echo "net.ipv6.conf.default.accept_redirects=0" >> /etc/sysctl.conf
+echo "net.ipv6.conf.all.accept_redirects=0" >> /etc/sysctl.conf
+echo "net.ipv4.conf.default.log_martians=1" >> /etc/sysctl.conf
+echo "net.ipv4.tcp_timestamps=0" >> /etc/sysctl.conf
+echo "net.ipv6.conf.default.accept_redirects=0" >> /etc/sysctl.conf
+
+# remove  unneed file
+rm -rf /etc/.java
+
+#fix wireshark
+sed -i "s/dofile(DATA_DIR/--dofile(DATA_DIR/g" /usr/share/wireshark/init.lua
+
+# remove locale unneed
+localepurge
+
+
+# Enable SSH X11 Forwarding support
+#sed -i -e 's/\#X11Forwarding no/X11Forwarding yes/' /etc/ssh/sshd_config
+#sed -i -e 's/\#X11DisplayOffset/X11DisplayOffset/' /etc/ssh/sshd_config
+#sed -i -e 's/\#X11UseLocalhost/X11UseLocalhost/' /etc/ssh/sshd_config
+#sed -i -e 's/\#AllowTcpForwarding/AllowTcpForwarding/' /etc/ssh/sshd_config
+
+if [ ! -f /usr/local/bin/wmiexec.py ]; then
+echo -e "\e[1;33mInstalling Impacket.\e[0m"
+	cd /tmp
+	svn checkout http://impacket.googlecode.com/svn/trunk/ impacket
+	cd impacket
+	python setup.py install
+	rm -rf /tmp/impacket
+	echo
+fi
+
+#if [ ! -f /usr/share/FruityWifi/bin/danger ]; then
+#echo -e "\e[1;33mInstalling FruityWifi.\e[0m"
+#		cd /tmp
+#          git clone https://github.com/xtr4nge/FruityWifi.git
+#          cd FruityWifi
+#          chmod +x install-FruityWifi.sh
+#		./install-FruityWifi.sh
+#		cd ..
+#		rm -rf /tmp/FruityWifi
+#          echo
+#fi
+
+echo -e "\e[1;34mUpdating locate database.\e[0m" ; echo ; updatedb ; cd /root/
+
+

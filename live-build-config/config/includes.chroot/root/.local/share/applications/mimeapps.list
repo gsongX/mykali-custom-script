@@ -1,0 +1,35 @@
+[Default Applications]
+x-scheme-handler/http=iceweasel.desktop
+x-scheme-handler/https=iceweasel.desktop
+x-scheme-handler/about=iceweasel.desktop
+x-scheme-handler/mailto=mutt.desktop
+application/x-extension-eml=mutt.desktop
+message/rfc822=mutt.desktop
+inode/directory=caja-folder-handler.desktop
+text/plain=pluma.desktop
+audio/mpeg=vlc.desktop
+audio/x-mpegurl=vlc.desktop
+audio/x-scpls=vlc.desktop
+audio/x-vorbis+ogg=vlc.desktop
+audio/x-wav=vlc.desktop
+video/mp4=vlc.desktop
+video/mpeg=vlc.desktop
+video/mp2t=vlc.desktop
+video/msvideo=vlc.desktop
+video/quicktime=vlc.desktop
+video/webm=vlc.desktop
+video/x-avi=vlc.desktop
+video/x-flv=vlc.desktop
+video/x-matroska=vlc.desktop
+video/x-mpeg=vlc.desktop
+video/x-ogm+ogg=vlc.desktop
+image/bmp=iceweasel.desktop
+image/gif=iceweasel.desktop
+image/jpeg=iceweasel.desktop
+image/png=iceweasel.desktop
+image/tiff=iceweasel.desktop
+application/octet-stream=pluma.desktop
+
+[Added Associations]
+text/plain=gedit.desktop
+application/octet-stream=pluma.desktop;

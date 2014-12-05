@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="edit_wrap_lines" mtime="1400746362" type="int" value="2"/>
+	<entry name="use_syntax_highlighting" mtime="1400746362" type="bool" value="true"/>
+	<entry name="show_whitespace" mtime="1400746362" type="bool" value="true"/>
+	<entry name="show_line_numbers" mtime="1400746362" type="bool" value="true"/>
+</gconf>

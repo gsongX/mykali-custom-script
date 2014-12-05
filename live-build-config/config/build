@@ -1,0 +1,10 @@
+[Image]
+Architecture: amd64
+Archive-Areas: main contrib non-free
+Distribution: kali
+Mirror-Bootstrap: http://archive.kali.org/kali
+
+[FIXME]
+Configuration-Version: 4.0~alpha37
+Name: live-image
+Type: iso-hybrid

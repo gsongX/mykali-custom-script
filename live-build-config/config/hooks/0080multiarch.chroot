@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Check architecture
+ARCH="$(dpkg --print-architecture)"
+case "$ARCH" in
+   i386)
+      # Do nothing
+      ;;
+   amd64)
+      # Enable multiarch support
+		dpkg --add-architecture i386
+		apt-get update
+		apt-get -y install ia32-libs ia32-libs-gtk wine-bin winetricks recstudio
+		apt-get -y autoremove
+      ;;
+   *)
+      # Do nothing
+      ;;
+esac

@@ -1,0 +1,47 @@
+#! /bin/bash
+# For aptitude
+
+update-rc.d apache2 disable
+update-rc.d beef-xss disable
+update-rc.d dradis disable
+update-rc.d gdomap disable
+update-rc.d exim4 disable
+update-rc.d bluetooth disable
+update-rc.d xplico disable
+update-rc.d alsa-utils disable
+update-rc.d arpwatch disable
+update-rc.d beef-xss disable
+update-rc.d atftpd disable
+update-rc.d bluetooth disable
+update-rc.d cron disable
+update-rc.d miredo disable
+update-rc.d snmpd disable
+update-rc.d nfs-common disable
+update-rc.d syslog-ng enable
+update-rc.d tor disable
+update-rc.d smartmontools disable
+update-rc.d stunnel4 disable
+update-rc.d ssh disable
+update-rc.d rsync disable
+update-rc.d redsocks disable
+update-rc.d motd disable
+update-rc.d nginx disable
+update-rc.d pcscd disable
+update-rc.d darkstat disable
+update-rc.d openvpn disable
+update-rc.d polipo disable
+update-rc.d postgresql disable
+update-rc.d pppd-dns disable
+update-rc.d rlinetd disable
+update-rc.d libvirt-guests disable
+update-rc.d libvirt-bin disable
+update-rc.d saned disable
+update-rc.d thin disable
+update-rc.d mtab disable
+update-rc.d iodined disable
+update-rc.d virtualbox disable
+update-rc.d ntp disable
+
+
+
+

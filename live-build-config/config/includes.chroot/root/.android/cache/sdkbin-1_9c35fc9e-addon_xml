@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ * Copyright (C) 2010 The Android Open Source Project
+ *
+ * Licensed under the Apache License, version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+-->
+<sdk:sdk-addon xmlns:sdk="http://schemas.android.com/sdk/android/addon/5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<sdk:extra>
+    <sdk:vendor-id>intel</sdk:vendor-id>
+    <sdk:vendor-display>Intel Corporation</sdk:vendor-display>
+    <sdk:name-display>Intel x86 Emulator Accelerator (HAXM)</sdk:name-display>
+    <sdk:path>Hardware_Accelerated_Execution_Manager</sdk:path>
+    <sdk:revision>3</sdk:revision>
+    <sdk:description>Emulation speedup using Intel® VT processor technology. Read more at www.intel.com/software/android</sdk:description>
+    <sdk:desc-url>http://software.intel.com/</sdk:desc-url>
+    <sdk:uses-license ref="intel-android-extra-license"/>
+
+    <sdk:archives>
+        <sdk:archive os="windows">
+            <sdk:size>1735049</sdk:size>
+            <sdk:checksum type="sha1">7de70157ccaf9d8a3ba013a8fc83103c9c61ee34</sdk:checksum>
+            <sdk:url>haxm-windows_r03.zip</sdk:url>
+        </sdk:archive>
+        <sdk:archive os="macosx">
+            <sdk:size>250817</sdk:size>
+            <sdk:checksum type="sha1">90d41666ced45bf492b99f84ce21118e6d4c3842</sdk:checksum>
+            <sdk:url>haxm-macosx_r03.zip</sdk:url>
+        </sdk:archive>
+    </sdk:archives>
+</sdk:extra>
+
+<sdk:license type="text" id="intel-android-extra-license">
+<![CDATA[
+Intel (R) Hardware Accelerated Execution Manager
+End-User License Agreement
+
+Copyright (c) 2012 Intel Corporation.
+All rights reserved.
+
+Redistribution. Redistribution and use in binary form, without modification, are permitted provided that the following conditions are met:
+
+1.Redistributions must reproduce the above copyright notice and the following disclaimer in the  documentation and/or other materials provided with the distribution.
+
+2.Neither the name of Intel Corporation nor the names of its suppliers may be used to endorse or promote  products derived from this software without specific prior written permission.
+
+3.No reverse engineering, de-compilation, or disassembly of this software is permitted. Limited patent license. Intel Corporation grants a world-wide, royalty-free, non-exclusive license under  patents it now or hereafter owns or controls to make, have made, use, import, offer to sell and sell ("Utilize") this software, but solely to the extent that any such patent is necessary to Utilize the  software alone. The patent license shall not apply to any combinations which include this software. No  hardware per se is licensed hereunder.
+
+DISCLAIMER.
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR  IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY  DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)  HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE  POSSIBILITY OF SUCH DAMAGE.
+]]>
+</sdk:license>
+</sdk:sdk-addon>
+

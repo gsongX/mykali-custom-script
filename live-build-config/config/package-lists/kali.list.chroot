@@ -1,0 +1,401 @@
+# kali meta-package depends on everything we want
+kali-linux-full
+kali-root-login
+kali-defaults
+kali-menu
+kali-debtags
+kali-archive-keyring
+debian-installer-launcher
+alsa-tools
+
+# provide l10n for everybody
+locales-all
+console-setup
+kbd
+console-data
+console-common
+
+# Updates tools which have yet to be added to kali-linux meta
+lbd
+arachni
+bully
+uniscan
+automater
+wmis
+ridenum
+jd-gui
+oclgausscrack
+inguma
+freerdp-x11
+ubertooth
+xdotool
+ipv6-toolkit 
+jigsaw
+kismet-plugins
+o-saft
+slowhttptest
+yara
+kali-linux-all
+veil-evasion
+teamsploit
+device-pharmer
+bing-ip2hosts
+backdoor-factory
+doona
+sandi
+masscan
+linux-exploit-suggester
+ismtp
+htshells
+hackersh
+freeradius
+registry-tools 
+windows-privesc-check 
+veil 
+valgrind 
+usbip
+rkhunter
+cppcheck
+valgrind-mpi
+pff-tools
+pixz
+jython
+
+#====================================================================================
+#use ftp.cn.debian.org mirror 
+#====================================================================================
+#acccheck
+#kali-linux-full
+#veil-catapult
+#winexe
+#passing-the-hash
+#enum4linux
+#====================================================================================
+#lesstif2 libct4 libical0 libmapi0 libmapiadmin0 libocpf0 libsubunit0 libxp6 openchangeclient sqsh
+#====================================================================================
+#zim
+#-----------------------------------------------------------------------
+
+pgadmin3
+wine
+ttf-thai-arundina
+ttf-thai-tlwg
+ttf-mscorefonts-installer
+ttf-wqy-zenhei
+ttf-wqy-microhei
+bsdtar
+clusterd
+seclists
+bridge-utils
+htop
+httprint
+unicornscan
+mplayer2
+sysv-rc-conf
+libyara-dev
+librtlsdr-dev
+python-shodan
+device-pharmer
+#fcitx
+#fcitx-googlepinyin
+#fcitx-module-cloudpinyin
+bleachbit
+flashplugin-nonfree
+meld
+nethogs
+libyubikey-dev
+libyubikey0
+yubikey-personalization-gui
+localepurge
+abootimg
+
+# lib dep
+python-apsw
+libparse-win32registry-perl
+
+#zmap build need
+libgmp3-dev 
+libpcap-dev 
+gengetopt 
+byacc 
+flex
+
+#libary need
+python-usb
+python-nmap
+ruby-twitter4r
+libncursesw5-dev
+gparted
+libbtbb0
+python-pip
+
+# devlop tools
+automake
+cmake
+build-essential
+checkinstall
+nasm
+mingw-w64 
+binutils-mingw-w64 
+gcc-mingw-w64 
+mingw-w64-dev 
+mingw-w64-tools
+
+# Packages for tornado, supports owtf
+python-tornado
+python-setuptools
+
+# Packages for service wrapper, supports i2p
+#libservice-wrapper-java
+#libservice-wrapper-jni
+#service-wrapper
+
+# Package for hashkill
+#libssl-dev
+#libjson0-dev
+#amd-opencl-dev
+#nvidia-opencl-dev
+
+# some tools that we always want
+adduser
+apache2
+tftp
+atftpd
+mc
+lynx
+binutils
+bluez
+bluez-hcidump
+bsdutils
+#if ARCHITECTURES armel armhf
+cgpt
+#endif
+chkconfig
+clang
+coreutils
+cowsay
+cryptsetup
+curl
+debtags
+desktop-base
+diffutils
+dnsutils
+dsniff
+ethtool
+expect
+findutils
+#if ARCHITECTURES i386 amd64
+firmware-b43legacy-installer 
+firmware-b43-installer
+#endif
+florence
+fuse-utils
+gdb
+git
+gnupg
+gnupg-agent
+gnupg-curl
+gnutls-bin
+gparted
+grep
+axel
+shutter
+daemonfs
+#if ARCHITECTURES i386 amd64
+guymager
+#endif
+gzip
+haveged
+#i2p
+#i2p-router
+ipheth-utils
+iproute
+iptstate
+iputils-ping
+iputils-tracepath
+iw
+john
+john-data
+laptop-mode-tools
+libsqlite3-dev
+libsqlite3-ruby1.9.1
+lockfile-progs
+lua5.1
+lvm2
+lzma
+moreutils
+mtools
+mysql-server
+ncurses-base
+ncurses-bin
+ncurses-hexedit
+net-tools
+netcat-traditional
+nmap
+openssl
+openvpn
+p7zip-full
+parted
+php5
+php5-mysql
+pidgin
+pidgin-data
+pidgin-otr
+pidgin-encryption
+pidgin-skype
+polipo
+poppler-utils
+pwgen
+python-impacket
+paros
+radare2
+rdesktop
+rfkill
+ruby1.9.1
+ruby1.9.1-dev
+rubygems
+screen
+seahorse
+#seahorse-nautilus
+secure-delete
+sendemail
+sshfs
+ssss
+suckless-tools
+sudo
+tcpdump
+tftp
+tightvncserver
+tmux
+tor
+#if ARCHITECTURES armel armhf
+tor-arm
+#endif
+tree
+tor-geoipdb
+torsocks
+tsocks
+unar
+zip
+unrar
+unzip
+upx-ucl
+#if ARCHITECTURES armel armhf
+vboot-utils
+vboot-kernel-utils
+#endif
+vidalia
+vim
+vim-common
+vim-nox
+vim-runtime
+vim-tiny
+ctags
+wget
+whois
+xtightvncviewer
+
+########################################################
+#apt ext
+apt-transport-https
+python-gpgme
+geoip-bin
+zenmap
+conky
+lynx 
+links2 
+w3m 
+w3m-img 
+finch 
+irssi 
+fbcat 
+fbi 
+avidemux 
+cinelerra  
+lives 
+pitivi 
+winff
+ffmpeg 
+audacity 
+mhwaveedit 
+mencoder 
+audacious 
+smplayer 
+xchm
+ntp
+terminator
+bash-completion
+tmux
+geany
+#######################################################
+
+#if ARCHITECTURES armel armhf
+cgpt
+vboot-utils
+vboot-kernel-utils
+#endif
+
+#if ARCHITECTURES i386 amd64
+firmware-b43legacy-installer 
+firmware-b43-installer
+guymager
+#endif
+
+# Graphical desktops depending on the architecture
+#
+# You can replace all the remaining lines with a list of the
+# packages required to install your preferred graphical desktop
+# or you can just comment everything except the package of your
+# preferred desktop.
+
+#if ARCHITECTURES i386 amd64
+# *** GNOME DESKTOP ***
+#gnome-core
+gnome-brave-icon-theme
+#gnome-shell-extensions
+#gnome-orca
+#endif
+
+#if ARCHITECTURES armel armhf
+# *** XFCE DESKTOP ***
+xfce4
+network-manager-gnome
+network-manager
+#endif
+
+# *** KDE DESKTOP ***
+# kde-plasma-desktop
+# kdm
+
+# *** LXDE DESKTOP ***
+# lxde
+
+# *** Enlightenment DR17 DESKTOP ***
+# e17
+
+# *** MATE DESKTOP
+# | NOTE: The mate desktop requires other changes to the live config.
+# | See http://docs.kali.org/live-build/customize-the-kali-desktop-environment
+# | for details
+xorg
+#mate-archive-keyring
+mate-core
+mate-desktop-environment
+clearlooks-phenix-theme 
+#mate-desktop-environment-extra
+synaptic
+filezilla
+iceweasel
+network-manager
+network-manager-gnome
+network-manager-openvpn
+network-manager-openvpn-gnome
+network-manager-vpnc
+network-manager-vpnc-gnome
+network-manager-pptp
+network-manager-pptp-gnome
+#network-manager-openconnect
+#network-manager-openconnect-gnome
+#network-manager-strongswan
+ttf-ubuntu-title
+

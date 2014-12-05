@@ -1,0 +1,12 @@
+deb http://repo.kali.org/kali kali-bleeding-edge main non-free contrib
+deb http://repo.kali.org/kali kali-proposed-updates main non-free contrib
+
+deb http://www.deb-multimedia.org/ stable main non-free
+
+## Debian Offical Mirrors
+#deb http://ftp.cn.debian.org/debian sid main non-free contrib
+#deb-src http://ftp.cn.debian.org/debian sid main non-free contrib
+#deb http://ftp.cn.debian.org/debian/ testing-proposed-updates main non-free contrib
+#deb-src http://ftp.cn.debian.org/debian/ testing-proposed-updates main non-free contrib
+#deb http://ftp.cn.debian.org/debian-security testing/updates main non-free contrib
+#deb-src http://ftp.cn.debian.org/debian-security testing/updates main non-free contrib

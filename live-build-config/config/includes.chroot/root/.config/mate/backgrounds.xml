@@ -1,0 +1,292 @@
+<?xml version="1.0"?>
+<!DOCTYPE wallpapers SYSTEM "mate-wp-list.dtd">
+<wallpapers>
+  <wallpaper deleted="true">
+    <name>Gulp</name>
+    <filename>/usr/share/backgrounds/mate/abstract/Gulp.png</filename>
+    <options>zoom</options>
+    <shade_type>horizontal-gradient</shade_type>
+    <pcolor>#62627f7f5a5a</pcolor>
+    <scolor>#272758587e7e</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Float into MATE</name>
+    <filename>/usr/share/backgrounds/mate/desktop/Float-into-MATE.png</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#000001ee036d</pcolor>
+    <scolor>#62627f7f5a5a</scolor>
+    <artist>Rowen Stipe</artist>
+  </wallpaper>
+  <wallpaper deleted="true">
+    <name>Waves</name>
+    <filename>/usr/share/backgrounds/mate/abstract/Waves.png</filename>
+    <options>zoom</options>
+    <shade_type>horizontal-gradient</shade_type>
+    <pcolor>#272758587e7e</pcolor>
+    <scolor>#62627f7f5a5a</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="true">
+    <name>Arc</name>
+    <filename>/usr/share/backgrounds/mate/abstract/Arc-Colors-Transparent-Wallpaper.png</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>#272758587e7e</pcolor>
+    <scolor>#62627f7f5a5a</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>ninja-wallpaper-1920x1200.png</name>
+    <filename>/usr/share/images/desktop-base/ninja-wallpaper-1920x1200.png</filename>
+    <options>wallpaper</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#000001ee036d</pcolor>
+    <scolor>#62627f7f5a5a</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="true">
+    <name>Garden</name>
+    <filename>/usr/share/backgrounds/mate/nature/Garden.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#000001ee036d</pcolor>
+    <scolor>#62627f7f5a5a</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="true">
+    <name>ninja-desktop-grub.png</name>
+    <filename>/usr/share/images/desktop-base/ninja-desktop-grub.png</filename>
+    <options>wallpaper</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#000001ee036d</pcolor>
+    <scolor>#62627f7f5a5a</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>No Desktop Background</name>
+    <filename>(none)</filename>
+    <options>wallpaper</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#000001ee036d</pcolor>
+    <scolor>#62627f7f5a5a</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>ninja-wallpaper-1600x1200.png</name>
+    <filename>/usr/share/images/desktop-base/ninja-wallpaper-1600x1200.png</filename>
+    <options>wallpaper</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#000001ee036d</pcolor>
+    <scolor>#62627f7f5a5a</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>ninja-login-background.png</name>
+    <filename>/usr/share/images/desktop-base/ninja-login-background.png</filename>
+    <options>wallpaper</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#000001ee036d</pcolor>
+    <scolor>#62627f7f5a5a</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="true">
+    <name>Spring</name>
+    <filename>/usr/share/backgrounds/mate/abstract/Spring.png</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>#272758587e7e</pcolor>
+    <scolor>#62627f7f5a5a</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="true">
+    <name>Green Traditional</name>
+    <filename>/usr/share/backgrounds/mate/desktop/GreenTraditional.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#000001ee036d</pcolor>
+    <scolor>#62627f7f5a5a</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>ninja-wallpaper-1024x768.png</name>
+    <filename>/usr/share/images/desktop-base/ninja-wallpaper-1024x768.png</filename>
+    <options>wallpaper</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#000001ee036d</pcolor>
+    <scolor>#62627f7f5a5a</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="true">
+    <name>Dune</name>
+    <filename>/usr/share/backgrounds/mate/nature/Dune.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#000001ee036d</pcolor>
+    <scolor>#62627f7f5a5a</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="true">
+    <name>Two Wings</name>
+    <filename>/usr/share/backgrounds/mate/nature/TwoWings.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#000001ee036d</pcolor>
+    <scolor>#62627f7f5a5a</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="true">
+    <name>Fresh Flower</name>
+    <filename>/usr/share/backgrounds/mate/nature/FreshFlower.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#000001ee036d</pcolor>
+    <scolor>#62627f7f5a5a</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>ninja-wallpaper-2560x1440.png</name>
+    <filename>/usr/share/images/desktop-base/ninja-wallpaper-2560x1440.png</filename>
+    <options>wallpaper</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#000001ee036d</pcolor>
+    <scolor>#62627f7f5a5a</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="true">
+    <name>Storm</name>
+    <filename>/usr/share/backgrounds/mate/nature/Storm.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#000001ee036d</pcolor>
+    <scolor>#62627f7f5a5a</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>ninja-wallpaper-1920x1080.png</name>
+    <filename>/usr/share/images/desktop-base/ninja-wallpaper-1920x1080.png</filename>
+    <options>wallpaper</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#000001ee036d</pcolor>
+    <scolor>#62627f7f5a5a</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="true">
+    <name>Blinds</name>
+    <filename>/usr/share/backgrounds/mate/nature/Blinds.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#000001ee036d</pcolor>
+    <scolor>#62627f7f5a5a</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="true">
+    <name>Wood</name>
+    <filename>/usr/share/backgrounds/mate/nature/Wood.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#000001ee036d</pcolor>
+    <scolor>#62627f7f5a5a</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="true">
+    <name>Lady Bird</name>
+    <filename>/usr/share/backgrounds/mate/nature/LadyBird.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#000001ee036d</pcolor>
+    <scolor>#62627f7f5a5a</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="true">
+    <name>Green Meadow</name>
+    <filename>/usr/share/backgrounds/mate/nature/GreenMeadow.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#000001ee036d</pcolor>
+    <scolor>#62627f7f5a5a</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>ninja-wallpaper-1280x800.png</name>
+    <filename>/usr/share/images/desktop-base/ninja-wallpaper-1280x800.png</filename>
+    <options>wallpaper</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#000001ee036d</pcolor>
+    <scolor>#62627f7f5a5a</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="true">
+    <name>Aqua</name>
+    <filename>/usr/share/backgrounds/mate/nature/Aqua.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#000001ee036d</pcolor>
+    <scolor>#62627f7f5a5a</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="true">
+    <name>Rain Drops</name>
+    <filename>/usr/share/backgrounds/mate/nature/RainDrops.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#000001ee036d</pcolor>
+    <scolor>#62627f7f5a5a</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="true">
+    <name>Silk</name>
+    <filename>/usr/share/backgrounds/mate/abstract/Silk.png</filename>
+    <options>zoom</options>
+    <shade_type>horizontal-gradient</shade_type>
+    <pcolor>#272758587e7e</pcolor>
+    <scolor>#62627f7f5a5a</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>ninja-wallpaper-1440x900.png</name>
+    <filename>/usr/share/images/desktop-base/ninja-wallpaper-1440x900.png</filename>
+    <options>wallpaper</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#000001ee036d</pcolor>
+    <scolor>#62627f7f5a5a</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="true">
+    <name>Stripes</name>
+    <filename>/usr/share/backgrounds/mate/desktop/Stripes.png</filename>
+    <options>zoom</options>
+    <shade_type>vertical-gradient</shade_type>
+    <pcolor>#58589191bcbc</pcolor>
+    <scolor>#4444a5a52a2a</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="true">
+    <name>Flow</name>
+    <filename>/usr/share/backgrounds/mate/abstract/Flow.png</filename>
+    <options>zoom</options>
+    <shade_type>horizontal-gradient</shade_type>
+    <pcolor>#272758587e7e</pcolor>
+    <scolor>#62627f7f5a5a</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="true">
+    <name>Yellow Flower</name>
+    <filename>/usr/share/backgrounds/mate/nature/YellowFlower.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#000001ee036d</pcolor>
+    <scolor>#62627f7f5a5a</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>ninja-wallpaper-1280x1024.png</name>
+    <filename>/usr/share/images/desktop-base/ninja-wallpaper-1280x1024.png</filename>
+    <options>wallpaper</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#000001ee036d</pcolor>
+    <scolor>#62627f7f5a5a</scolor>
+    <artist>(none)</artist>
+  </wallpaper>
+</wallpapers>
